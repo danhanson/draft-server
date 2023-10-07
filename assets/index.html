@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Hello this is my website">
+    <title>Hello</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <div id="messages"></div>
+    <script lang="javascript">
+        const socket = new WebSocket(`ws://${window.location.host}/feed.ws`);
+        socket.onmessage = (message) => {
+            const elem = document.createElement("p");
+            elem.textContent = message.data;
+            document.querySelector("#messages").appendChild(elem);
+        };
+    </script>
+</body>
