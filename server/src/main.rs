@@ -1,4 +1,5 @@
 mod draft_data;
+mod action;
 
 use axum::{
     extract::{
@@ -6,6 +7,7 @@ use axum::{
         Path,
         WebSocketUpgrade,
         ws,
+        Json,
     },
     response::IntoResponse,
     routing::{get, put},
@@ -15,18 +17,19 @@ use std::sync::{Arc, RwLock};
 use std::{net::SocketAddr, str::FromStr};
 use tower_http::services::ServeDir;
 use tokio::sync::broadcast;
-use draft_data::DraftData;
+use draft_data::{DraftData, Team};
+use action::Action;
 
 const ASSETS_DIR: &str = "assets";
 
 #[derive(Debug, Clone)]
 struct AppState {
-    websocket_channel: broadcast::Sender<ws::Message>,
+    websocket_channel: broadcast::Sender<String>,
     draft_data: Arc<RwLock<DraftData>>,
 }
 
 impl AppState {
-    fn new(websocket_channel: broadcast::Sender<ws::Message>) -> Self {
+    fn new(websocket_channel: broadcast::Sender<String>) -> Self {
         Self {
             websocket_channel: websocket_channel,
             draft_data: Arc::new(RwLock::new(DraftData::new())),
@@ -34,11 +37,12 @@ impl AppState {
     }
 }
 
+
 #[tokio::main(flavor = "multi_thread")]
 async fn main() {
     let args: Vec<String> = std::env::args().collect();
 
-    let (websocket_sender, websocket_receiver) = broadcast::channel::<ws::Message>(16);
+    let (websocket_sender, websocket_receiver) = broadcast::channel::<String>(16);
     tokio::spawn(log_ws_messages(websocket_receiver));
 
     let state = AppState::new(websocket_sender);
@@ -52,7 +56,7 @@ async fn main() {
     axum::Server::bind(&addr).serve(routes.into_make_service_with_connect_info::<SocketAddr>()).await.expect("failed to start server");
 }
 
-async fn log_ws_messages(mut receiver: broadcast::Receiver<ws::Message>) {
+async fn log_ws_messages(mut receiver: broadcast::Receiver<String>) {
     loop {
         match receiver.recv().await {
             Ok(message) => {
@@ -73,14 +77,16 @@ async fn websocket_route(State(state): State<AppState>, ws: WebSocketUpgrade) ->
 }
 
 async fn subscribe(state: AppState, mut socket: ws::WebSocket) {
-    let (result, mut receiver) = {  // use block scope to avoid Send error, see https://github.com/rust-lang/rust/issues/57478
+    let (message, mut receiver) = {  // use block scope to avoid Send error, see https://github.com/rust-lang/rust/issues/57478
         let data = state.draft_data.read().unwrap();
-        let result = ws::Message::Text(data.load());
+        let teams = data.load();
+        let action = Action::Load { teams };
+        let message = ws::Message::Text(serde_json::to_string(&action).unwrap());
         let receiver = state.websocket_channel.subscribe();
         drop(data);  // hold lock after subscribe to avoid missing writes
-        (result, receiver)
+        (message, receiver)
     };
-    if let Err(error) = socket.send(result).await {
+    if let Err(error) = socket.send(message).await {
         print!("Unexpected error: {:?}", error);
         if let Err(error) = socket.close().await {
             print!("Unexpected error: {:?}", error);
@@ -119,7 +125,7 @@ async fn subscribe(state: AppState, mut socket: ws::WebSocket) {
         };
         // extract async code from select! to ensure that its tasks are cancellation safe
         if let Some(msg) = result {
-            if let Err(error) = socket.send(msg).await {
+            if let Err(error) = socket.send(ws::Message::Text(msg)).await {
                 println!("Unexpected error: {:?}", error);
             }
         } else {
@@ -131,21 +137,20 @@ async fn subscribe(state: AppState, mut socket: ws::WebSocket) {
     }
 }
 
-async fn put_team(State(state): State<AppState>, Path(team_id): Path<String>, body: String) -> impl IntoResponse {
+async fn put_team(State(state): State<AppState>, Json(new_team): Json<Team>) -> impl IntoResponse {
     let mut draft_data = state.draft_data.write().unwrap();
-    let msg = draft_data.update(team_id, body);
-    let _ = state.websocket_channel.send(msg);
+    let team = draft_data.update(new_team);
+    let action = Action::Update { team };
+    let _ = state.websocket_channel.send(action.to_json());
     drop(draft_data);  // hold lock to after send to ensure writes in correct order
     StatusCode::OK
 }
 
 async fn delete_team(State(state): State<AppState>, Path(team_id): Path<String>) -> impl IntoResponse {
     let mut draft_data = state.draft_data.write().unwrap();
-    let is_deleted = draft_data.delete(&team_id).map(
-        |msg| state.websocket_channel.send(msg)
-    ).is_some();
-    drop(draft_data);  // hold lock to after send to ensure writes in correct order
-    if is_deleted {
+    if draft_data.delete(&team_id) {
+        let action = Action::Delete { name: team_id };
+        let _ = state.websocket_channel.send(action.to_json());
         StatusCode::OK
     } else {
         StatusCode::NOT_FOUND
