@@ -1,5 +1,6 @@
 use serde::Serialize;
 use serde_json;
+use uuid::Uuid;
 use crate::draft_data::Team;
 
 
@@ -8,7 +9,7 @@ use crate::draft_data::Team;
 pub enum Action<'a> {
     Load { teams: Vec<&'a Team> },
     Update { team: &'a Team },
-    Delete { name: String },
+    Delete { id: Uuid },
 }
 
 impl Action<'_> {

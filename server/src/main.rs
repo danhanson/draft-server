@@ -10,13 +10,17 @@ use axum::{
         Json,
     },
     response::IntoResponse,
-    routing::{get, put},
-    Router, http::StatusCode,
+    routing::get,
+    Router, http::{StatusCode, header, HeaderMap},
 };
 use std::sync::{Arc, RwLock};
 use std::{net::SocketAddr, str::FromStr};
-use tower_http::services::ServeDir;
+use tower_http::{
+    services::ServeDir,
+    cors::CorsLayer,
+};
 use tokio::sync::broadcast;
+use uuid::Uuid;
 use draft_data::{DraftData, Team};
 use action::Action;
 
@@ -37,7 +41,6 @@ impl AppState {
     }
 }
 
-
 #[tokio::main(flavor = "multi_thread")]
 async fn main() {
     let args: Vec<String> = std::env::args().collect();
@@ -48,7 +51,9 @@ async fn main() {
     let state = AppState::new(websocket_sender);
     let routes = Router::new()
         .route("/feed.ws", get(websocket_route))
-        .route("/team/:team_id", put(put_team).delete(delete_team))
+        .route("/teams/:team_id", get(get_team).put(put_team).delete(delete_team))
+        .route("/teams", get(get_teams).post(post_team))
+        .layer(CorsLayer::permissive())
         .fallback_service(ServeDir::new(ASSETS_DIR).append_index_html_on_directories(true))
         .with_state::<()>(state);
 
@@ -87,72 +92,103 @@ async fn subscribe(state: AppState, mut socket: ws::WebSocket) {
         (message, receiver)
     };
     if let Err(error) = socket.send(message).await {
-        print!("Unexpected error: {:?}", error);
+        print!("{} Unexpected error: {:?}", line!(), error);
         if let Err(error) = socket.close().await {
-            print!("Unexpected error: {:?}", error);
+            print!("{} Unexpected error: {:?}", line!(), error);
         }
         return;
     }
     loop {
-        let result = tokio::select! {
+        tokio::select! {
             biased;  // prioritize processing the channel to avoid Lagged error
             update_message = receiver.recv() => {
                 match update_message {
-                    Ok(msg) => Some(msg),
-                    Err(broadcast::error::RecvError::Lagged(_)) => {
-                        println!("LAGGING!");
-                        None
+                    Ok(msg) => {
+                        if let Err(error) = socket.send(ws::Message::Text(msg)).await {
+                            println!("{} Unexpected WebSocket send error: {:?}", line!(), error);
+                        }
                     },
-                    Err(broadcast::error::RecvError::Closed) => None
+                    Err(channel_error) => {
+                        println!("{} Unexpected channel error {:?}", line!(), channel_error);
+                        if let Err(error) = socket.close().await {
+                            println!("{} Unexpected WebSocket close error: {:?}", line!(), error);
+                        }
+                        break;
+                    },
                 }
             },
             ws_message = socket.recv() => {
                 match ws_message {
-                    None => {
+                    None | Some(Ok(ws::Message::Close(_))) => {
                         break;
                     },
-                    Some(Ok(ws::Message::Close(_))) => None,
                     Some(Ok(msg)) => {
-                        print!("Unexpected message: {:?}", msg);
+                        print!("{} Unexpected message: {:?}", line!(), msg);
+                        // silently ignore for now
                         continue;
                     },
                     Some(Err(error)) => {
-                        print!("Unexpected error: {:?}", error);
-                        None
+                        print!("{} Unexpected error: {:?}", line!(), error);
+                        if let Err(error) = socket.close().await {
+                            println!("{} Unexpected error: {:?}", line!(), error)
+                        }
+                        break;
                     }
                 }
             },
-        };
-        // extract async code from select! to ensure that its tasks are cancellation safe
-        if let Some(msg) = result {
-            if let Err(error) = socket.send(ws::Message::Text(msg)).await {
-                println!("Unexpected error: {:?}", error);
-            }
-        } else {
-            if let Err(error) = socket.close().await {
-                println!("Unexpected error: {:?}", error)
-            }
-            break;
         }
     }
 }
 
-async fn put_team(State(state): State<AppState>, Json(new_team): Json<Team>) -> impl IntoResponse {
+async fn put_team(State(state): State<AppState>, Path(team_id): Path<Uuid>, Json(new_team): Json<Team>) -> impl IntoResponse {
     let mut draft_data = state.draft_data.write().unwrap();
-    let team = draft_data.update(new_team);
-    let action = Action::Update { team };
-    let _ = state.websocket_channel.send(action.to_json());
-    drop(draft_data);  // hold lock to after send to ensure writes in correct order
-    StatusCode::OK
+    if let Some(team) = draft_data.upsert(team_id, new_team) {
+        let action = Action::Update { team };
+        let _ = state.websocket_channel.send(action.to_json());
+        drop(draft_data); // hold lock to after send to ensure writes in correct order
+        StatusCode::OK
+    } else {
+        StatusCode::UNPROCESSABLE_ENTITY
+    }
 }
 
-async fn delete_team(State(state): State<AppState>, Path(team_id): Path<String>) -> impl IntoResponse {
+async fn delete_team(State(state): State<AppState>, Path(team_id): Path<Uuid>) -> impl IntoResponse {
     let mut draft_data = state.draft_data.write().unwrap();
     if draft_data.delete(&team_id) {
-        let action = Action::Delete { name: team_id };
+        let action = Action::Delete { id: team_id };
         let _ = state.websocket_channel.send(action.to_json());
         StatusCode::OK
     } else {
         StatusCode::NOT_FOUND
+    }
+}
+
+async fn post_team(State(state): State<AppState>, Json(new_team): Json<Team>) -> impl IntoResponse {
+    let id = new_team.id.unwrap_or_else(|| Uuid::new_v4());
+    let mut draft_data = state.draft_data.write().unwrap();
+    if let Some(team) = draft_data.insert(id, new_team) {
+        let action = Action::Update { team };
+        let _ = state.websocket_channel.send(action.to_json());
+        drop(draft_data);  // hold lock to after send to ensure writes in correct order
+        let mut headers = HeaderMap::new();
+        headers.append(header::LOCATION, format!("/team/{}", id.to_string()).parse().unwrap());
+        (StatusCode::CREATED, headers)
+    } else {
+        (StatusCode::UNPROCESSABLE_ENTITY, HeaderMap::new())
+    }
+}
+
+async fn get_teams(State(state): State<AppState>) -> impl IntoResponse {
+    let draft_data = state.draft_data.read().unwrap();
+    let teams = draft_data.load();
+    Json(&teams).into_response()
+}
+
+async fn get_team(State(state): State<AppState>, Path(team_id): Path<Uuid>) -> impl IntoResponse {
+    let draft_data = state.draft_data.read().unwrap();
+    if let Some(team) = draft_data.get(&team_id) {
+        Json(team).into_response()
+    } else {
+        StatusCode::NOT_FOUND.into_response()
     }
 }
