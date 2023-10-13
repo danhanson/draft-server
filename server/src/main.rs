@@ -145,7 +145,7 @@ async fn put_team(State(state): State<AppState>, Path(team_id): Path<Uuid>, Json
     if let Some(team) = draft_data.upsert(team_id, new_team) {
         let action = Action::Update { team };
         let _ = state.websocket_channel.send(action.to_json());
-        drop(draft_data); // hold lock to after send to ensure writes in correct order
+        drop(draft_data);  // hold lock to after send to ensure writes in correct order
         StatusCode::OK
     } else {
         StatusCode::UNPROCESSABLE_ENTITY
@@ -157,6 +157,7 @@ async fn delete_team(State(state): State<AppState>, Path(team_id): Path<Uuid>) -
     if draft_data.delete(&team_id) {
         let action = Action::Delete { id: team_id };
         let _ = state.websocket_channel.send(action.to_json());
+        drop(draft_data);  // hold lock to after send to ensure writes in correct order
         StatusCode::OK
     } else {
         StatusCode::NOT_FOUND
