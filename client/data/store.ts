@@ -2,12 +2,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import { setupListeners } from '@reduxjs/toolkit/query';
 import { combineReducers } from 'redux';
 import { feedMiddleware } from './feed';
-import { type Team, teamsMiddleware, teamsReducer, teamsApi } from './teams';
-
-interface State {
-  teams: Array<Team>;
-  [teamsApi.reducerPath]: Parameters<typeof teamsApi.reducer>[0];
-}
+import { teamsMiddleware, teamsReducer, teamsApi } from './teams';
 
 export const store = configureStore({
   reducer: combineReducers({
