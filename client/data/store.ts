@@ -2,15 +2,23 @@ import { configureStore } from '@reduxjs/toolkit';
 import { setupListeners } from '@reduxjs/toolkit/query';
 import { combineReducers } from 'redux';
 import { feedMiddleware } from './feed';
-import { teamsMiddleware, teamsReducer, teamsApi } from './teams';
+import { auctionSettingsSlice, auctionSettingsMiddleware } from './auction-settings';
+import { teamsMiddleware, teamsSlice } from './teams';
+import { auctionMiddleware, auctionSlice } from './auction';
 
 export const store = configureStore({
   reducer: combineReducers({
-    [teamsApi.reducerPath]: teamsApi.reducer,
-    teams: teamsReducer,
+    [teamsSlice.name]: teamsSlice.reducer,
+    [auctionSettingsSlice.name]: auctionSettingsSlice.reducer,
+    [auctionSlice.name]: auctionSlice.reducer,
   }),
   middleware(getDefaultMiddleware) {
-    return getDefaultMiddleware().prepend(feedMiddleware, teamsMiddleware).concat(teamsApi.middleware);
+    return getDefaultMiddleware().prepend(
+      feedMiddleware,
+      auctionSettingsMiddleware,
+      teamsMiddleware,
+      auctionMiddleware,
+    );
   },
 });
 

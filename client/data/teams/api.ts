@@ -1,7 +1,10 @@
 'use client';
 import { createApi, fetchBaseQuery, FetchBaseQueryMeta } from '@reduxjs/toolkit/query/react';
-import { type Team, type TeamWithoutId } from './team';
 import { API_SERVER } from '@/constants';
+
+interface Team {
+  id: string;
+}
 
 export const teamsApi = createApi({
   reducerPath: 'teamApi',
@@ -11,7 +14,7 @@ export const teamsApi = createApi({
   }),
   endpoints: (builder) => ({
     postTeam: builder.mutation({
-      query: (team: TeamWithoutId) => ({ url: '', method: 'POST', body: team }),
+      query: (team: Team) => ({ url: '', method: 'POST', body: team }),
       transformResponse (response: null, meta: FetchBaseQueryMeta) {
         if (!meta.response) {
           return true;

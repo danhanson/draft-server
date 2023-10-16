@@ -1,0 +1,26 @@
+.auction {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.auction-player {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1ex;
+}
+.auction-name {
+  font-size: var(--header-size);
+  font-weight: var(--header-weight);
+}
+.cancel {
+  background-color: var(--warning-bg);
+  color: var(--warning-fg);
+}
+.start {
+  background-color: var(--action-bg);
+  color: var(--action-fg);
+}

@@ -1,0 +1,23 @@
+.settings {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1em;
+  justify-content: center;
+}
+.edit {
+  all: unset;
+  margin-left: auto;
+  margin-right: 0;
+  font-size: var(--sub-text-size);
+  font-weight: var(--sub-text-weight);
+  opacity: var(--sub-text-opacity);
+  cursor: pointer;
+}
+.settings div {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.settings p {
+  font-size: var(--header-size);
+  font-weight: var(--header-weight);
+}

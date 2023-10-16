@@ -1,0 +1,22 @@
+:root {
+  --fg-color: black;
+  --bg-color: white;
+  --button-bg: lightgrey;
+  --button-fg: black;
+  --button-border: 2px;
+  --action-bg: blue;
+  --action-fg: white;
+  --warning-bg: red;
+  --warning-fg: white;
+  --button-radius: 6px;
+  --button-padding: 0.5ex 1ex;
+  --title-size: 2rem;
+  --title-weight: normal;
+  --header-size: 1.5rem;
+  --header-weight: 1.5rem;
+  --text-size: 1rem;
+  --text-weight: normal;
+  --sub-text-size: 0.75rem;
+  --sub-text-weight: normal;
+  --sub-text-opacity: 0.75;
+}

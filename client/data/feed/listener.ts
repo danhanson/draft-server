@@ -1,8 +1,8 @@
 import { createListenerMiddleware, isAnyOf, type Action } from '@reduxjs/toolkit';
-import { subscribeAction, unsubscribeAction, openAction, messageAction, errorAction, closeAction } from './actions';
-import { API_SERVER } from '@/constants';
+import { subscribeAction, unsubscribeAction, openAction, messageAction, errorAction, closeAction, sendAction } from './actions';
+import { type ClientUpdate } from './client-update';
 
-const WS_URL = `ws://${API_SERVER}/feed.ws`;
+const WS_URL = 'wss://ajmichael.net/draft_ws';
 
 class Feed {
   socket: WebSocket | null = null;
@@ -24,12 +24,19 @@ class Feed {
       this.socket = null;
     }
   }
+  send(update: ClientUpdate) {
+    if (this.socket) {
+      this.socket.send(JSON.stringify(update));
+    } else {
+      console.warn("Unable to send message, not subscribed to feed");
+    }
+  }
 }
 
 const feedListener = createListenerMiddleware({ extra: new Feed() });
 
 feedListener.startListening({
-  matcher: isAnyOf(subscribeAction, unsubscribeAction),
+  matcher: isAnyOf(subscribeAction, unsubscribeAction, sendAction),
   effect (action, { 'extra': feed, dispatch }) {
     switch (action.type) {
       case "feed/subscribe":
@@ -37,6 +44,9 @@ feedListener.startListening({
         break;
       case "feed/unsubscribe":
         feed.unsubscribe();
+        break;
+      case "feed/send":
+        feed.send(action.payload);
         break;
       default:
         throw Error(`unexpected action: ${action}`);

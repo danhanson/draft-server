@@ -1,4 +1,5 @@
 export { teamsApi } from './api';
-export { teamsReducer, selectGetTeam, selectTeams } from './slice';
+export { teamsSlice, selectGetTeam, selectTeams } from './slice';
 export { teamsMiddleware } from './listener';
-export type { Team, TeamWithoutId, TeamAction } from './team';
+export { addTeamAction, deleteTeamAction, renameTeamAction, setTeamBackgroundAction, type TeamAction } from './actions';
+export type { Team, AuctionResult } from './team';

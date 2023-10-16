@@ -1,0 +1,84 @@
+.team {
+  display: flex;
+  position: relative;
+  flex-flow: column nowrap;
+  justify-content: start;
+  padding: 1ex;
+}
+.team h2 {
+  text-align: center;
+  font-size: var(--header-size);
+  font-weight: var(--header-weight);
+}
+.team img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  left: 0;
+  top: 0;
+  object-position: center;
+  object-fit: cover;
+}
+.team-status {
+  width: 12ex;
+  margin: 0 auto;
+}
+.team-status th {
+  text-align: left;
+}
+.team-status td {
+  text-align: right;
+}
+.players {
+  border-spacing: 1ex 0;
+  padding: 0.5ex;
+}
+.players th,
+.players td {
+  text-align: left;
+  white-space: nowrap;
+  padding: 0.25ex;
+  font-size: var(--subt-text-size);
+  font-weight: var(--sub-text-weight);
+}
+.players td:nth-child(1),
+.players th:nth-child(1),
+.players td:nth-child(4),
+.players th:nth-child(4) {
+  text-align: right;
+}
+.team-buttons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 0.5ex;
+}
+.team-buttons button {
+  font-size: var(--sub-text-size);
+  font-weight: var(--sub-text-weight);
+}
+.remove {
+  color: var(--warning-fg);
+  background-color: var(--warning-bg);
+  inset: 0;
+  border: none;
+  padding: 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  opacity: 0.75;
+  line-height: 1em;
+}
+.team-bottom {
+  margin-top: auto;
+  margin-bottom: 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  gap: 2ex;
+}
+.team-bottom button {
+  background-color: var(--action-bg);
+  color: var(--action-fg);
+}

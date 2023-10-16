@@ -1,0 +1,13 @@
+.passes {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.passes ul {
+  list-style: none;
+}
+.header {
+  font-size: var(--header-size);
+  font-weight: var(--header-weight);
+}

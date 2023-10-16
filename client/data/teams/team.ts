@@ -1,26 +1,12 @@
-export interface Team {
-  id: string;
+export interface AuctionResult {
+  dollar_amount: number;
   name: string;
-  image?: string;
-  owners: Array<string>;
-  players: Array<number>;
+  position: string;
 }
 
-export type TeamWithoutId = Omit<Team, 'id'>;
-
-export interface LoadAction {
-  action: 'Load',
-  teams: Array<Team>,
+export interface Team {
+  name: string;
+  bg_url?: string;
+  budget: number;
+  players: Array<AuctionResult>;
 }
-
-export interface UpdateAction {
-  action: 'Update',
-  team: Team,
-}
-
-export interface DeleteAction {
-  action: 'Delete',
-  name: string,
-}
-
-export type TeamAction = LoadAction | UpdateAction | DeleteAction;

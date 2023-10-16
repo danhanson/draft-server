@@ -1,0 +1,1701 @@
+{
+  "export": 1,
+  "remaining_players": [
+    {
+      "available": true,
+      "name": "Nikola Jokic",
+      "rank": 1,
+      "url": "https://hashtagbasketball.com/9196/player"
+    },
+    {
+      "available": true,
+      "name": "Kevin Durant",
+      "rank": 2,
+      "url": "https://hashtagbasketball.com/9386/player"
+    },
+    {
+      "available": true,
+      "name": "Joel Embiid",
+      "rank": 3,
+      "url": "https://hashtagbasketball.com/9418/player"
+    },
+    {
+      "available": true,
+      "name": "James Harden",
+      "rank": 4,
+      "url": "https://hashtagbasketball.com/9232/player"
+    },
+    {
+      "available": true,
+      "name": "Giannis Antetokounmpo",
+      "rank": 5,
+      "url": "https://hashtagbasketball.com/9325/player"
+    },
+    {
+      "available": true,
+      "name": "Stephen Curry",
+      "rank": 6,
+      "url": "https://hashtagbasketball.com/9218/player"
+    },
+    {
+      "available": true,
+      "name": "LeBron James",
+      "rank": 7,
+      "url": "https://hashtagbasketball.com/9158/player"
+    },
+    {
+      "available": true,
+      "name": "Karl-Anthony Towns",
+      "rank": 8,
+      "url": "https://hashtagbasketball.com/9346/player"
+    },
+    {
+      "available": true,
+      "name": "Kyrie Irving",
+      "rank": 9,
+      "url": "https://hashtagbasketball.com/9157/player"
+    },
+    {
+      "available": true,
+      "name": "Luka Doncic",
+      "rank": 10,
+      "url": "https://hashtagbasketball.com/15200/player"
+    },
+    {
+      "available": true,
+      "name": "Trae Young",
+      "rank": 11,
+      "url": "https://hashtagbasketball.com/15202/player"
+    },
+    {
+      "available": true,
+      "name": "LaMelo Ball",
+      "rank": 12,
+      "url": "https://hashtagbasketball.com/27469/player"
+    },
+    {
+      "available": true,
+      "name": "Damian Lillard",
+      "rank": 13,
+      "url": "https://hashtagbasketball.com/9445/player"
+    },
+    {
+      "available": true,
+      "name": "Jayson Tatum",
+      "rank": 14,
+      "url": "https://hashtagbasketball.com/13730/player"
+    },
+    {
+      "available": true,
+      "name": "Anthony Davis",
+      "rank": 15,
+      "url": "https://hashtagbasketball.com/9354/player"
+    },
+    {
+      "available": true,
+      "name": "Tyrese Haliburton",
+      "rank": 16,
+      "url": "https://hashtagbasketball.com/27619/player"
+    },
+    {
+      "available": true,
+      "name": "Kawhi Leonard",
+      "rank": 17,
+      "url": "https://hashtagbasketball.com/9476/player"
+    },
+    {
+      "available": true,
+      "name": "Devin Booker",
+      "rank": 18,
+      "url": "https://hashtagbasketball.com/9434/player"
+    },
+    {
+      "available": true,
+      "name": "Paul George",
+      "rank": 19,
+      "url": "https://hashtagbasketball.com/9250/player"
+    },
+    {
+      "available": true,
+      "name": "Jimmy Butler",
+      "rank": 20,
+      "url": "https://hashtagbasketball.com/9152/player"
+    },
+    {
+      "available": true,
+      "name": "Robert Williams",
+      "rank": 21,
+      "url": "https://hashtagbasketball.com/15224/player"
+    },
+    {
+      "available": true,
+      "name": "Khris Middleton",
+      "rank": 22,
+      "url": "https://hashtagbasketball.com/9334/player"
+    },
+    {
+      "available": true,
+      "name": "Kristaps Porzingis",
+      "rank": 23,
+      "url": "https://hashtagbasketball.com/9373/player"
+    },
+    {
+      "available": true,
+      "name": "Bam Adebayo",
+      "rank": 24,
+      "url": "https://hashtagbasketball.com/13742/player"
+    },
+    {
+      "available": true,
+      "name": "DeMar DeRozan",
+      "rank": 25,
+      "url": "https://hashtagbasketball.com/9489/player"
+    },
+    {
+      "available": true,
+      "name": "Chris Paul",
+      "rank": 26,
+      "url": "https://hashtagbasketball.com/9265/player"
+    },
+    {
+      "available": true,
+      "name": "Domantas Sabonis",
+      "rank": 27,
+      "url": "https://hashtagbasketball.com/10113/player"
+    },
+    {
+      "available": true,
+      "name": "Shai Gilgeous-Alexander",
+      "rank": 28,
+      "url": "https://hashtagbasketball.com/15208/player"
+    },
+    {
+      "available": true,
+      "name": "Fred VanVleet",
+      "rank": 29,
+      "url": "https://hashtagbasketball.com/10124/player"
+    },
+    {
+      "available": true,
+      "name": "Darius Garland",
+      "rank": 30,
+      "url": "https://hashtagbasketball.com/17191/player"
+    },
+    {
+      "available": true,
+      "name": "Jrue Holiday",
+      "rank": 31,
+      "url": "https://hashtagbasketball.com/9355/player"
+    },
+    {
+      "available": true,
+      "name": "Myles Turner",
+      "rank": 32,
+      "url": "https://hashtagbasketball.com/9252/player"
+    },
+    {
+      "available": true,
+      "name": "Donovan Mitchell",
+      "rank": 33,
+      "url": "https://hashtagbasketball.com/13741/player"
+    },
+    {
+      "available": true,
+      "name": "Rudy Gobert",
+      "rank": 34,
+      "url": "https://hashtagbasketball.com/9503/player"
+    },
+    {
+      "available": true,
+      "name": "Ja Morant",
+      "rank": 35,
+      "url": "https://hashtagbasketball.com/17189/player"
+    },
+    {
+      "available": true,
+      "name": "Jarrett Allen",
+      "rank": 36,
+      "url": "https://hashtagbasketball.com/13749/player"
+    },
+    {
+      "available": true,
+      "name": "Bradley Beal",
+      "rank": 37,
+      "url": "https://hashtagbasketball.com/9523/player"
+    },
+    {
+      "available": true,
+      "name": "Deandre Ayton",
+      "rank": 38,
+      "url": "https://hashtagbasketball.com/15198/player"
+    },
+    {
+      "available": true,
+      "name": "Zach LaVine",
+      "rank": 39,
+      "url": "https://hashtagbasketball.com/9343/player"
+    },
+    {
+      "available": true,
+      "name": "Terry Rozier",
+      "rank": 40,
+      "url": "https://hashtagbasketball.com/9105/player"
+    },
+    {
+      "available": true,
+      "name": "Nikola Vucevic",
+      "rank": 41,
+      "url": "https://hashtagbasketball.com/9412/player"
+    },
+    {
+      "available": true,
+      "name": "Desmond Bane",
+      "rank": 42,
+      "url": "https://hashtagbasketball.com/27649/player"
+    },
+    {
+      "available": true,
+      "name": "Anthony Edwards",
+      "rank": 43,
+      "url": "https://hashtagbasketball.com/27638/player"
+    },
+    {
+      "available": true,
+      "name": "Cade Cunningham",
+      "rank": 44,
+      "url": "https://hashtagbasketball.com/31030/player"
+    },
+    {
+      "available": true,
+      "name": "Dejounte Murray",
+      "rank": 45,
+      "url": "https://hashtagbasketball.com/10165/player"
+    },
+    {
+      "available": true,
+      "name": "Jaren Jackson Jr.",
+      "rank": 46,
+      "url": "https://hashtagbasketball.com/15201/player"
+    },
+    {
+      "available": true,
+      "name": "Jaylen Brown",
+      "rank": 47,
+      "url": "https://hashtagbasketball.com/10090/player"
+    },
+    {
+      "available": true,
+      "name": "Pascal Siakam",
+      "rank": 48,
+      "url": "https://hashtagbasketball.com/10123/player"
+    },
+    {
+      "available": true,
+      "name": "Jonas Valanciunas",
+      "rank": 49,
+      "url": "https://hashtagbasketball.com/9491/player"
+    },
+    {
+      "available": true,
+      "name": "Kyle Lowry",
+      "rank": 50,
+      "url": "https://hashtagbasketball.com/9490/player"
+    },
+    {
+      "available": true,
+      "name": "Evan Mobley",
+      "rank": 51,
+      "url": "https://hashtagbasketball.com/31032/player"
+    },
+    {
+      "available": true,
+      "name": "Jordan Poole",
+      "rank": 52,
+      "url": "https://hashtagbasketball.com/17329/player"
+    },
+    {
+      "available": true,
+      "name": "John Collins",
+      "rank": 53,
+      "url": "https://hashtagbasketball.com/13737/player"
+    },
+    {
+      "available": true,
+      "name": "De'Aaron Fox",
+      "rank": 54,
+      "url": "https://hashtagbasketball.com/13732/player"
+    },
+    {
+      "available": true,
+      "name": "Scottie Barnes",
+      "rank": 55,
+      "url": "https://hashtagbasketball.com/31033/player"
+    },
+    {
+      "available": true,
+      "name": "Mikal Bridges",
+      "rank": 56,
+      "url": "https://hashtagbasketball.com/15207/player"
+    },
+    {
+      "available": true,
+      "name": "CJ McCollum",
+      "rank": 57,
+      "url": "https://hashtagbasketball.com/9447/player"
+    },
+    {
+      "available": true,
+      "name": "Tyrese Maxey",
+      "rank": 58,
+      "url": "https://hashtagbasketball.com/27450/player"
+    },
+    {
+      "available": true,
+      "name": "Gordon Hayward",
+      "rank": 59,
+      "url": "https://hashtagbasketball.com/9506/player"
+    },
+    {
+      "available": true,
+      "name": "Michael Porter Jr.",
+      "rank": 60,
+      "url": "https://hashtagbasketball.com/15211/player"
+    },
+    {
+      "available": true,
+      "name": "Brandon Clarke",
+      "rank": 61,
+      "url": "https://hashtagbasketball.com/17251/player"
+    },
+    {
+      "available": true,
+      "name": "PJ Washington",
+      "rank": 62,
+      "url": "https://hashtagbasketball.com/17273/player"
+    },
+    {
+      "available": true,
+      "name": "Jamal Murray",
+      "rank": 63,
+      "url": "https://hashtagbasketball.com/10134/player"
+    },
+    {
+      "available": true,
+      "name": "Julius Randle",
+      "rank": 64,
+      "url": "https://hashtagbasketball.com/9282/player"
+    },
+    {
+      "available": true,
+      "name": "Brandon Ingram",
+      "rank": 65,
+      "url": "https://hashtagbasketball.com/10149/player"
+    },
+    {
+      "available": true,
+      "name": "Keegan Murray",
+      "rank": 66,
+      "url": "https://hashtagbasketball.com/38942/player"
+    },
+    {
+      "available": true,
+      "name": "Tyler Herro",
+      "rank": 67,
+      "url": "https://hashtagbasketball.com/17295/player"
+    },
+    {
+      "available": true,
+      "name": "Draymond Green",
+      "rank": 68,
+      "url": "https://hashtagbasketball.com/9228/player"
+    },
+    {
+      "available": true,
+      "name": "OG Anunoby",
+      "rank": 69,
+      "url": "https://hashtagbasketball.com/13750/player"
+    },
+    {
+      "available": true,
+      "name": "Devin Vassell",
+      "rank": 70,
+      "url": "https://hashtagbasketball.com/27644/player"
+    },
+    {
+      "available": true,
+      "name": "Tobias Harris",
+      "rank": 71,
+      "url": "https://hashtagbasketball.com/9212/player"
+    },
+    {
+      "available": true,
+      "name": "D'Angelo Russell",
+      "rank": 72,
+      "url": "https://hashtagbasketball.com/9285/player"
+    },
+    {
+      "available": true,
+      "name": "Ivica Zubac",
+      "rank": 73,
+      "url": "https://hashtagbasketball.com/10169/player"
+    },
+    {
+      "available": true,
+      "name": "Onyeka Okongwu",
+      "rank": 74,
+      "url": "https://hashtagbasketball.com/27342/player"
+    },
+    {
+      "available": true,
+      "name": "Zion Williamson",
+      "rank": 75,
+      "url": "https://hashtagbasketball.com/16958/player"
+    },
+    {
+      "available": true,
+      "name": "Jerami Grant",
+      "rank": 76,
+      "url": "https://hashtagbasketball.com/9419/player"
+    },
+    {
+      "available": true,
+      "name": "Wendell Carter Jr.",
+      "rank": 77,
+      "url": "https://hashtagbasketball.com/15204/player"
+    },
+    {
+      "available": true,
+      "name": "Lauri Markkanen",
+      "rank": 78,
+      "url": "https://hashtagbasketball.com/13734/player"
+    },
+    {
+      "available": true,
+      "name": "Marcus Smart",
+      "rank": 79,
+      "url": "https://hashtagbasketball.com/9102/player"
+    },
+    {
+      "available": true,
+      "name": "Al Horford",
+      "rank": 80,
+      "url": "https://hashtagbasketball.com/9082/player"
+    },
+    {
+      "available": true,
+      "name": "Jalen Brunson",
+      "rank": 81,
+      "url": "https://hashtagbasketball.com/15280/player"
+    },
+    {
+      "available": true,
+      "name": "Gary Trent Jr.",
+      "rank": 82,
+      "url": "https://hashtagbasketball.com/15355/player"
+    },
+    {
+      "available": true,
+      "name": "Alperen Sengun",
+      "rank": 83,
+      "url": "https://hashtagbasketball.com/31045/player"
+    },
+    {
+      "available": true,
+      "name": "Ben Simmons",
+      "rank": 84,
+      "url": "https://hashtagbasketball.com/10087/player"
+    },
+    {
+      "available": true,
+      "name": "Jakob Poeltl",
+      "rank": 85,
+      "url": "https://hashtagbasketball.com/10122/player"
+    },
+    {
+      "available": true,
+      "name": "Keldon Johnson",
+      "rank": 86,
+      "url": "https://hashtagbasketball.com/17305/player"
+    },
+    {
+      "available": true,
+      "name": "Brook Lopez",
+      "rank": 87,
+      "url": "https://hashtagbasketball.com/9118/player"
+    },
+    {
+      "available": true,
+      "name": "Franz Wagner",
+      "rank": 88,
+      "url": "https://hashtagbasketball.com/31037/player"
+    },
+    {
+      "available": true,
+      "name": "Saddiq Bey",
+      "rank": 89,
+      "url": "https://hashtagbasketball.com/27593/player"
+    },
+    {
+      "available": true,
+      "name": "Robert Covington",
+      "rank": 90,
+      "url": "https://hashtagbasketball.com/9420/player"
+    },
+    {
+      "available": true,
+      "name": "Klay Thompson",
+      "rank": 91,
+      "url": "https://hashtagbasketball.com/9221/player"
+    },
+    {
+      "available": true,
+      "name": "Lonzo Ball",
+      "rank": 92,
+      "url": "https://hashtagbasketball.com/13728/player"
+    },
+    {
+      "available": true,
+      "name": "Isaiah Hartenstein",
+      "rank": 93,
+      "url": "https://hashtagbasketball.com/15281/player"
+    },
+    {
+      "available": true,
+      "name": "Monte Morris",
+      "rank": 94,
+      "url": "https://hashtagbasketball.com/13791/player"
+    },
+    {
+      "available": true,
+      "name": "Josh Giddey",
+      "rank": 95,
+      "url": "https://hashtagbasketball.com/31035/player"
+    },
+    {
+      "available": true,
+      "name": "Paolo Banchero",
+      "rank": 96,
+      "url": "https://hashtagbasketball.com/38840/player"
+    },
+    {
+      "available": true,
+      "name": "Christian Wood",
+      "rank": 97,
+      "url": "https://hashtagbasketball.com/9427/player"
+    },
+    {
+      "available": true,
+      "name": "Mike Conley",
+      "rank": 98,
+      "url": "https://hashtagbasketball.com/9296/player"
+    },
+    {
+      "available": true,
+      "name": "Jusuf Nurkic",
+      "rank": 99,
+      "url": "https://hashtagbasketball.com/9192/player"
+    },
+    {
+      "available": true,
+      "name": "Jabari Smith Jr",
+      "rank": 100,
+      "url": "https://hashtagbasketball.com/38797/player"
+    },
+    {
+      "available": true,
+      "name": "Tre Jones",
+      "rank": 101,
+      "url": "https://hashtagbasketball.com/27679/player"
+    },
+    {
+      "available": true,
+      "name": "Kevin Porter Jr.",
+      "rank": 102,
+      "url": "https://hashtagbasketball.com/17286/player"
+    },
+    {
+      "available": true,
+      "name": "JaVale McGee",
+      "rank": 103,
+      "url": "https://hashtagbasketball.com/9173/player"
+    },
+    {
+      "available": true,
+      "name": "Jarred Vanderbilt",
+      "rank": 104,
+      "url": "https://hashtagbasketball.com/15288/player"
+    },
+    {
+      "available": true,
+      "name": "Herbert Jones",
+      "rank": 105,
+      "url": "https://hashtagbasketball.com/31064/player"
+    },
+    {
+      "available": true,
+      "name": "Buddy Hield",
+      "rank": 106,
+      "url": "https://hashtagbasketball.com/10136/player"
+    },
+    {
+      "available": true,
+      "name": "Clint Capela",
+      "rank": 107,
+      "url": "https://hashtagbasketball.com/9237/player"
+    },
+    {
+      "available": true,
+      "name": "Bobby Portis",
+      "rank": 108,
+      "url": "https://hashtagbasketball.com/9151/player"
+    },
+    {
+      "available": true,
+      "name": "Dorian Finney-Smith",
+      "rank": 109,
+      "url": "https://hashtagbasketball.com/10117/player"
+    },
+    {
+      "available": true,
+      "name": "Kyle Kuzma",
+      "rank": 110,
+      "url": "https://hashtagbasketball.com/13753/player"
+    },
+    {
+      "available": true,
+      "name": "Cameron Johnson",
+      "rank": 111,
+      "url": "https://hashtagbasketball.com/17197/player"
+    },
+    {
+      "available": true,
+      "name": "Bogdan Bogdanovic",
+      "rank": 112,
+      "url": "https://hashtagbasketball.com/13726/player"
+    },
+    {
+      "available": true,
+      "name": "Jalen Green",
+      "rank": 113,
+      "url": "https://hashtagbasketball.com/31031/player"
+    },
+    {
+      "available": true,
+      "name": "Anfernee Simons",
+      "rank": 114,
+      "url": "https://hashtagbasketball.com/15221/player"
+    },
+    {
+      "available": true,
+      "name": "Nicolas Claxton",
+      "rank": 115,
+      "url": "https://hashtagbasketball.com/17252/player"
+    },
+    {
+      "available": true,
+      "name": "Spencer Dinwiddie",
+      "rank": 116,
+      "url": "https://hashtagbasketball.com/9209/player"
+    },
+    {
+      "available": true,
+      "name": "Collin Sexton",
+      "rank": 117,
+      "url": "https://hashtagbasketball.com/15205/player"
+    },
+    {
+      "available": true,
+      "name": "Cody Martin",
+      "rank": 118,
+      "url": "https://hashtagbasketball.com/17334/player"
+    },
+    {
+      "available": true,
+      "name": "Bones Hyland",
+      "rank": 119,
+      "url": "https://hashtagbasketball.com/31055/player"
+    },
+    {
+      "available": true,
+      "name": "Jalen Smith",
+      "rank": 120,
+      "url": "https://hashtagbasketball.com/27683/player"
+    },
+    {
+      "available": true,
+      "name": "Kendrick Nunn",
+      "rank": 121,
+      "url": "https://hashtagbasketball.com/15252/player"
+    },
+    {
+      "available": true,
+      "name": "Malcolm Brogdon",
+      "rank": 122,
+      "url": "https://hashtagbasketball.com/10127/player"
+    },
+    {
+      "available": true,
+      "name": "Daniel Gafford",
+      "rank": 123,
+      "url": "https://hashtagbasketball.com/17259/player"
+    },
+    {
+      "available": true,
+      "name": "Norman Powell",
+      "rank": 124,
+      "url": "https://hashtagbasketball.com/9500/player"
+    },
+    {
+      "available": true,
+      "name": "Mitchell Robinson",
+      "rank": 125,
+      "url": "https://hashtagbasketball.com/15282/player"
+    },
+    {
+      "available": true,
+      "name": "Aaron Gordon",
+      "rank": 126,
+      "url": "https://hashtagbasketball.com/9406/player"
+    },
+    {
+      "available": true,
+      "name": "Patrick Williams",
+      "rank": 127,
+      "url": "https://hashtagbasketball.com/27627/player"
+    },
+    {
+      "available": true,
+      "name": "Harrison Barnes",
+      "rank": 128,
+      "url": "https://hashtagbasketball.com/9220/player"
+    },
+    {
+      "available": true,
+      "name": "De'Anthony Melton",
+      "rank": 129,
+      "url": "https://hashtagbasketball.com/15316/player"
+    },
+    {
+      "available": true,
+      "name": "Otto Porter Jr.",
+      "rank": 130,
+      "url": "https://hashtagbasketball.com/9524/player"
+    },
+    {
+      "available": true,
+      "name": "Kentavious Caldwell-Pope",
+      "rank": 131,
+      "url": "https://hashtagbasketball.com/9203/player"
+    },
+    {
+      "available": true,
+      "name": "Andrew Wiggins",
+      "rank": 132,
+      "url": "https://hashtagbasketball.com/9342/player"
+    },
+    {
+      "available": true,
+      "name": "Richaun Holmes",
+      "rank": 133,
+      "url": "https://hashtagbasketball.com/9422/player"
+    },
+    {
+      "available": true,
+      "name": "Gary Payton II",
+      "rank": 134,
+      "url": "https://hashtagbasketball.com/11882/player"
+    },
+    {
+      "available": true,
+      "name": "Matisse Thybulle",
+      "rank": 135,
+      "url": "https://hashtagbasketball.com/17275/player"
+    },
+    {
+      "available": true,
+      "name": "Jalen Suggs",
+      "rank": 136,
+      "url": "https://hashtagbasketball.com/31034/player"
+    },
+    {
+      "available": true,
+      "name": "Mo Bamba",
+      "rank": 137,
+      "url": "https://hashtagbasketball.com/15278/player"
+    },
+    {
+      "available": true,
+      "name": "Dillon Brooks",
+      "rank": 138,
+      "url": "https://hashtagbasketball.com/13786/player"
+    },
+    {
+      "available": true,
+      "name": "Bruce Brown",
+      "rank": 139,
+      "url": "https://hashtagbasketball.com/15287/player"
+    },
+    {
+      "available": true,
+      "name": "Patrick Beverley",
+      "rank": 140,
+      "url": "https://hashtagbasketball.com/9239/player"
+    },
+    {
+      "available": true,
+      "name": "Nassir Little",
+      "rank": 141,
+      "url": "https://hashtagbasketball.com/17233/player"
+    },
+    {
+      "available": true,
+      "name": "Jaden McDaniels",
+      "rank": 142,
+      "url": "https://hashtagbasketball.com/27700/player"
+    },
+    {
+      "available": true,
+      "name": "Alex Caruso",
+      "rank": 143,
+      "url": "https://hashtagbasketball.com/13860/player"
+    },
+    {
+      "available": true,
+      "name": "Derrick White",
+      "rank": 144,
+      "url": "https://hashtagbasketball.com/13755/player"
+    },
+    {
+      "available": true,
+      "name": "Caleb Martin",
+      "rank": 145,
+      "url": "https://hashtagbasketball.com/17312/player"
+    },
+    {
+      "available": true,
+      "name": "Markelle Fultz",
+      "rank": 146,
+      "url": "https://hashtagbasketball.com/13729/player"
+    },
+    {
+      "available": true,
+      "name": "Bojan Bogdanovic",
+      "rank": 147,
+      "url": "https://hashtagbasketball.com/9114/player"
+    },
+    {
+      "available": true,
+      "name": "Jae'Sean Tate",
+      "rank": 148,
+      "url": "https://hashtagbasketball.com/27596/player"
+    },
+    {
+      "available": true,
+      "name": "Kelly Oubre Jr.",
+      "rank": 149,
+      "url": "https://hashtagbasketball.com/9526/player"
+    },
+    {
+      "available": true,
+      "name": "Pat Connaughton",
+      "rank": 150,
+      "url": "https://hashtagbasketball.com/9456/player"
+    },
+    {
+      "available": true,
+      "name": "Reggie Jackson",
+      "rank": 151,
+      "url": "https://hashtagbasketball.com/9213/player"
+    },
+    {
+      "available": true,
+      "name": "Luguentz Dort",
+      "rank": 152,
+      "url": "https://hashtagbasketball.com/17255/player"
+    },
+    {
+      "available": true,
+      "name": "Isaiah Stewart",
+      "rank": 153,
+      "url": "https://hashtagbasketball.com/27622/player"
+    },
+    {
+      "available": true,
+      "name": "Chuma Okeke",
+      "rank": 154,
+      "url": "https://hashtagbasketball.com/17230/player"
+    },
+    {
+      "available": true,
+      "name": "Seth Curry",
+      "rank": 155,
+      "url": "https://hashtagbasketball.com/9467/player"
+    },
+    {
+      "available": true,
+      "name": "Kevin Huerter",
+      "rank": 156,
+      "url": "https://hashtagbasketball.com/15216/player"
+    },
+    {
+      "available": true,
+      "name": "Chris Duarte",
+      "rank": 157,
+      "url": "https://hashtagbasketball.com/31042/player"
+    },
+    {
+      "available": true,
+      "name": "Mason Plumlee",
+      "rank": 158,
+      "url": "https://hashtagbasketball.com/9442/player"
+    },
+    {
+      "available": true,
+      "name": "Cole Anthony",
+      "rank": 159,
+      "url": "https://hashtagbasketball.com/27590/player"
+    },
+    {
+      "available": true,
+      "name": "Darius Bazley",
+      "rank": 160,
+      "url": "https://hashtagbasketball.com/17240/player"
+    },
+    {
+      "available": true,
+      "name": "Jonathan Isaac",
+      "rank": 161,
+      "url": "https://hashtagbasketball.com/13733/player"
+    },
+    {
+      "available": true,
+      "name": "Jae Crowder",
+      "rank": 162,
+      "url": "https://hashtagbasketball.com/9107/player"
+    },
+    {
+      "available": true,
+      "name": "Grayson Allen",
+      "rank": 163,
+      "url": "https://hashtagbasketball.com/15218/player"
+    },
+    {
+      "available": true,
+      "name": "Quentin Grimes",
+      "rank": 164,
+      "url": "https://hashtagbasketball.com/31054/player"
+    },
+    {
+      "available": true,
+      "name": "Damian Jones",
+      "rank": 165,
+      "url": "https://hashtagbasketball.com/10172/player"
+    },
+    {
+      "available": true,
+      "name": "Andre Drummond",
+      "rank": 166,
+      "url": "https://hashtagbasketball.com/9202/player"
+    },
+    {
+      "available": true,
+      "name": "Paul Reed",
+      "rank": 167,
+      "url": "https://hashtagbasketball.com/27884/player"
+    },
+    {
+      "available": true,
+      "name": "Isaiah Livers",
+      "rank": 168,
+      "url": "https://hashtagbasketball.com/31071/player"
+    },
+    {
+      "available": true,
+      "name": "Will Barton",
+      "rank": 169,
+      "url": "https://hashtagbasketball.com/9197/player"
+    },
+    {
+      "available": true,
+      "name": "Immanuel Quickley",
+      "rank": 170,
+      "url": "https://hashtagbasketball.com/27724/player"
+    },
+    {
+      "available": true,
+      "name": "Thomas Bryant",
+      "rank": 171,
+      "url": "https://hashtagbasketball.com/13856/player"
+    },
+    {
+      "available": true,
+      "name": "Victor Oladipo",
+      "rank": 172,
+      "url": "https://hashtagbasketball.com/9402/player"
+    },
+    {
+      "available": true,
+      "name": "Grant Williams",
+      "rank": 173,
+      "url": "https://hashtagbasketball.com/17270/player"
+    },
+    {
+      "available": true,
+      "name": "Isaiah Jackson",
+      "rank": 174,
+      "url": "https://hashtagbasketball.com/31051/player"
+    },
+    {
+      "available": true,
+      "name": "Kevin Love",
+      "rank": 175,
+      "url": "https://hashtagbasketball.com/9161/player"
+    },
+    {
+      "available": true,
+      "name": "Steven Adams",
+      "rank": 176,
+      "url": "https://hashtagbasketball.com/9390/player"
+    },
+    {
+      "available": true,
+      "name": "Aleksej Pokusevski",
+      "rank": 177,
+      "url": "https://hashtagbasketball.com/27463/player"
+    },
+    {
+      "available": true,
+      "name": "Tim Hardaway Jr.",
+      "rank": 178,
+      "url": "https://hashtagbasketball.com/9087/player"
+    },
+    {
+      "available": true,
+      "name": "RJ Barrett",
+      "rank": 179,
+      "url": "https://hashtagbasketball.com/17181/player"
+    },
+    {
+      "available": true,
+      "name": "Killian Hayes",
+      "rank": 180,
+      "url": "https://hashtagbasketball.com/27587/player"
+    },
+    {
+      "available": true,
+      "name": "Marvin Bagley III",
+      "rank": 181,
+      "url": "https://hashtagbasketball.com/15199/player"
+    },
+    {
+      "available": true,
+      "name": "Derrick Rose",
+      "rank": 182,
+      "url": "https://hashtagbasketball.com/9142/player"
+    },
+    {
+      "available": true,
+      "name": "Walker Kessler",
+      "rank": 183,
+      "url": "https://hashtagbasketball.com/38790/player"
+    },
+    {
+      "available": true,
+      "name": "Kyle Anderson",
+      "rank": 184,
+      "url": "https://hashtagbasketball.com/9475/player"
+    },
+    {
+      "available": true,
+      "name": "Mark Williams",
+      "rank": 185,
+      "url": "https://hashtagbasketball.com/38835/player"
+    },
+    {
+      "available": true,
+      "name": "Delon Wright",
+      "rank": 186,
+      "url": "https://hashtagbasketball.com/9495/player"
+    },
+    {
+      "available": true,
+      "name": "Royce O'Neale",
+      "rank": 187,
+      "url": "https://hashtagbasketball.com/13792/player"
+    },
+    {
+      "available": true,
+      "name": "Deni Avdija",
+      "rank": 188,
+      "url": "https://hashtagbasketball.com/27454/player"
+    },
+    {
+      "available": true,
+      "name": "Cameron Payne",
+      "rank": 189,
+      "url": "https://hashtagbasketball.com/9394/player"
+    },
+    {
+      "available": true,
+      "name": "Bennedict Mathurin",
+      "rank": 190,
+      "url": "https://hashtagbasketball.com/38940/player"
+    },
+    {
+      "available": true,
+      "name": "Jaxson Hayes",
+      "rank": 191,
+      "url": "https://hashtagbasketball.com/17194/player"
+    },
+    {
+      "available": true,
+      "name": "Jordan Clarkson",
+      "rank": 192,
+      "url": "https://hashtagbasketball.com/9283/player"
+    },
+    {
+      "available": true,
+      "name": "Talen Horton-Tucker",
+      "rank": 193,
+      "url": "https://hashtagbasketball.com/17217/player"
+    },
+    {
+      "available": true,
+      "name": "Tyus Jones",
+      "rank": 194,
+      "url": "https://hashtagbasketball.com/9347/player"
+    },
+    {
+      "available": true,
+      "name": "Josh Richardson",
+      "rank": 195,
+      "url": "https://hashtagbasketball.com/9317/player"
+    },
+    {
+      "available": true,
+      "name": "Josh Hart",
+      "rank": 196,
+      "url": "https://hashtagbasketball.com/13756/player"
+    },
+    {
+      "available": true,
+      "name": "Reggie Bullock",
+      "rank": 197,
+      "url": "https://hashtagbasketball.com/9204/player"
+    },
+    {
+      "available": true,
+      "name": "Obi Toppin",
+      "rank": 198,
+      "url": "https://hashtagbasketball.com/27591/player"
+    },
+    {
+      "available": true,
+      "name": "Trendon Watford",
+      "rank": 199,
+      "url": "https://hashtagbasketball.com/31122/player"
+    },
+    {
+      "available": true,
+      "name": "De'Andre Hunter",
+      "rank": 200,
+      "url": "https://hashtagbasketball.com/17190/player"
+    }
+  ],
+  "roster_size": 15,
+  "team_data": [
+    {
+      "bg_url": "https://media0.giphy.com/media/3oAt2dA6LxMkRrGc0g/giphy.gif",
+      "budget": 0,
+      "name": "Adam",
+      "players": [
+        {
+          "dollar_amount": 54,
+          "name": "Giannis Antetokounmpo",
+          "position": "F"
+        },
+        {
+          "dollar_amount": 56,
+          "name": "Luka Doncic",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 70,
+          "name": "Wardell Stephen \"Steph\" Curry II",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 62,
+          "name": "James Harden",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 40,
+          "name": "Zion Williamson",
+          "position": "F"
+        },
+        {
+          "dollar_amount": 6,
+          "name": "De'aaron Fox",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 2,
+          "name": "TJ McConnell",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 2,
+          "name": "Lonzo Ball",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 1,
+          "name": "Chris Boucher",
+          "position": "F-C"
+        },
+        {
+          "dollar_amount": 2,
+          "name": "Jonathan Isaac",
+          "position": "F"
+        },
+        {
+          "dollar_amount": 1,
+          "name": "Tyrese Haliburton",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 1,
+          "name": "Isaiah Stewart",
+          "position": "F-C"
+        },
+        {
+          "dollar_amount": 1,
+          "name": "Robert Covington",
+          "position": "F"
+        },
+        {
+          "dollar_amount": 1,
+          "name": "Evan Mobley",
+          "position": "F-C"
+        },
+        {
+          "dollar_amount": 1,
+          "name": "Dejounte Murray",
+          "position": "G"
+        }
+      ]
+    },
+    {
+      "bg_url": "https://c.tenor.com/Ilt-dZQd-hQAAAAC/shaquille-o-neal-cat.gif",
+      "budget": 0,
+      "name": "Eric",
+      "players": [
+        {
+          "dollar_amount": 22,
+          "name": "Jaylen Brown",
+          "position": "G-F"
+        },
+        {
+          "dollar_amount": 73,
+          "name": "Nikola Jokic",
+          "position": "C"
+        },
+        {
+          "dollar_amount": 57,
+          "name": "Kevin Durant",
+          "position": "F"
+        },
+        {
+          "dollar_amount": 64,
+          "name": "Karl-Anthony Towns",
+          "position": "C"
+        },
+        {
+          "dollar_amount": 8,
+          "name": "OG Anunoby",
+          "position": "F"
+        },
+        {
+          "dollar_amount": 12,
+          "name": "Michael Porter Jr",
+          "position": "F"
+        },
+        {
+          "dollar_amount": 14,
+          "name": "Lamelo Ball",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 20,
+          "name": "Jaren Jackson Jr",
+          "position": "F"
+        },
+        {
+          "dollar_amount": 9,
+          "name": "CJ McCollum",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 4,
+          "name": "Derrick White",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 8,
+          "name": "Gordon Hayward",
+          "position": "F"
+        },
+        {
+          "dollar_amount": 5,
+          "name": "Jusuf Nurkic",
+          "position": "C"
+        },
+        {
+          "dollar_amount": 1,
+          "name": "Brook Lopez",
+          "position": "C"
+        },
+        {
+          "dollar_amount": 2,
+          "name": "Malcolm Brogdon",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 1,
+          "name": "Mike Conley",
+          "position": "G"
+        }
+      ]
+    },
+    {
+      "bg_url": "https://media0.giphy.com/media/Rgc7pvWsESXgNOsMBL/200.gif",
+      "budget": 0,
+      "name": "Ben",
+      "players": [
+        {
+          "dollar_amount": 30,
+          "name": "Fred Van Vleet",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 14,
+          "name": "Mikal Bridges",
+          "position": "F"
+        },
+        {
+          "dollar_amount": 26,
+          "name": "Clint Capela",
+          "position": "C"
+        },
+        {
+          "dollar_amount": 30,
+          "name": "Jrue Holiday",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 37,
+          "name": "Jimmy Butler",
+          "position": "G-F"
+        },
+        {
+          "dollar_amount": 20,
+          "name": "Chris Paul",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 33,
+          "name": "Zach Lavine",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 13,
+          "name": "Draymond Green",
+          "position": "F"
+        },
+        {
+          "dollar_amount": 22,
+          "name": "John Collins",
+          "position": "F"
+        },
+        {
+          "dollar_amount": 3,
+          "name": "PJ Washington",
+          "position": "F"
+        },
+        {
+          "dollar_amount": 1,
+          "name": "Kelly Olynyk",
+          "position": "F-C"
+        },
+        {
+          "dollar_amount": 23,
+          "name": "Julius Randle",
+          "position": "F"
+        },
+        {
+          "dollar_amount": 36,
+          "name": "Nikola Vucevic",
+          "position": "C"
+        },
+        {
+          "dollar_amount": 7,
+          "name": "Terry Rozier",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 5,
+          "name": "Buddy Hield",
+          "position": "G"
+        }
+      ]
+    },
+    {
+      "bg_url": "https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/MPJG4XWTMQI6XM47AWRNO5VR6Q.jpg",
+      "budget": 0,
+      "name": "Joe",
+      "players": [
+        {
+          "dollar_amount": 5,
+          "name": "Ben Simmons",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 42,
+          "name": "Anthony Davis",
+          "position": "F"
+        },
+        {
+          "dollar_amount": 30,
+          "name": "Devin Booker",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 31,
+          "name": "Kyrie Irving",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 43,
+          "name": "Paul George",
+          "position": "G-F"
+        },
+        {
+          "dollar_amount": 29,
+          "name": "Donovan Mitchell ",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 30,
+          "name": "Brandon Ingram",
+          "position": "F"
+        },
+        {
+          "dollar_amount": 25,
+          "name": "Bam Adebayo",
+          "position": "C"
+        },
+        {
+          "dollar_amount": 25,
+          "name": "Khris Middleton",
+          "position": "G-F"
+        },
+        {
+          "dollar_amount": 15,
+          "name": "Robert Williams",
+          "position": "C"
+        },
+        {
+          "dollar_amount": 11,
+          "name": "DeMar DeRozan",
+          "position": "G-F"
+        },
+        {
+          "dollar_amount": 7,
+          "name": "Kyle Lowry",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 4,
+          "name": "Jarrett Allen",
+          "position": "C"
+        },
+        {
+          "dollar_amount": 2,
+          "name": "Jalen Green",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 1,
+          "name": "Ja Morant",
+          "position": "G"
+        }
+      ]
+    },
+    {
+      "bg_url": "https://cdn.drawception.com/images/panels/2012/4-3/3K9Wq3e8Oq-6.png",
+      "budget": 0,
+      "name": "Dan-Toby",
+      "players": [
+        {
+          "dollar_amount": 48,
+          "name": "Domantas Sabonis",
+          "position": "F"
+        },
+        {
+          "dollar_amount": 50,
+          "name": "Trae Young",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 58,
+          "name": "Joel Embiid",
+          "position": "C"
+        },
+        {
+          "dollar_amount": 41,
+          "name": "Tobias Harris",
+          "position": "F"
+        },
+        {
+          "dollar_amount": 46,
+          "name": "Rudy Gobert",
+          "position": "C"
+        },
+        {
+          "dollar_amount": 20,
+          "name": "Russel Westbrook",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 3,
+          "name": "Evan Fournier",
+          "position": "G-F"
+        },
+        {
+          "dollar_amount": 8,
+          "name": "Jerami Grant",
+          "position": "F"
+        },
+        {
+          "dollar_amount": 6,
+          "name": "Christian Wood",
+          "position": "F-C"
+        },
+        {
+          "dollar_amount": 8,
+          "name": "Kristaps Porzingis",
+          "position": "F-C"
+        },
+        {
+          "dollar_amount": 1,
+          "name": "Kyle Anderson",
+          "position": "F"
+        },
+        {
+          "dollar_amount": 2,
+          "name": "Norm Powell",
+          "position": "G-F"
+        },
+        {
+          "dollar_amount": 1,
+          "name": "Bogdan Bogdanovic",
+          "position": "G-F"
+        },
+        {
+          "dollar_amount": 2,
+          "name": "Nickeil Alexander-Walker",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 6,
+          "name": "Colin Sexton",
+          "position": "G"
+        }
+      ]
+    },
+    {
+      "bg_url": "https://media0.giphy.com/media/pHMtogPBHC7Cg/giphy.gif?cid=790b76116c3738e0352886ea7232549a1e452a944d0be9fa&rid=giphy.gif&ct=g",
+      "budget": 1,
+      "name": "Varun",
+      "players": [
+        {
+          "dollar_amount": 52,
+          "name": "Damian Lillard",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 12,
+          "name": "Cade Cunningham",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 38,
+          "name": "LeBron James",
+          "position": "G-F"
+        },
+        {
+          "dollar_amount": 4,
+          "name": "Darius Garland",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 45,
+          "name": "Bradley Beal",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 50,
+          "name": "Jayson Tatum",
+          "position": "F"
+        },
+        {
+          "dollar_amount": 28,
+          "name": "Shai Gilgeous-Alexander ",
+          "position": "G"
+        },
+        {
+          "dollar_amount": 10,
+          "name": "Anthony Edwards",
+          "position": "G-F"
+        },
+        {
+          "dollar_amount": 23,
+          "name": "Deandre Ayton",
+          "position": "C"
+        },
+        {
+          "dollar_amount": 14,
+          "name": "Richaun Holmes",
+          "position": "F-C"
+        },
+        {
+          "dollar_amount": 5,
+          "name": "Jakob Poeltl",
+          "position": "C"
+        },
+        {
+          "dollar_amount": 13,
+          "name": "Myles Turner",
+          "position": "C"
+        },
+        {
+          "dollar_amount": 1,
+          "name": "Keldon Johnson",
+          "position": "F"
+        },
+        {
+          "dollar_amount": 3,
+          "name": "Jonas Valanciunas",
+          "position": "C"
+        },
+        {
+          "dollar_amount": 1,
+          "name": "Caris Levert",
+          "position": "G-F"
+        }
+      ]
+    }
+  ],
+  "total_budget": 300
+}
