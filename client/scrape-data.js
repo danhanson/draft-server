@@ -1,4 +1,4 @@
-const fs = require("fs/promises");
+const fs = require('fs/promises');
 
 async function fetch_page(offset) {
   let response = await fetch('https://lm-api-reads.fantasy.espn.com/apis/v3/games/fba/seasons/2024/segments/0/leaguedefaults/1?scoringPeriodId=0&view=kona_player_info', {
@@ -53,30 +53,31 @@ async function fetch_teams() {
 
 async function load_data() {
   await fs.mkdir('./downloads', { recursive: true });
-  const playerFile = await fs.open("downloads/players.json", "w");
-  playerFile.write("[");
-  for (let i = 0; i < 1000; i += 20) {
+  const playerFile = await fs.open('downloads/players.json', 'w');
+  await playerFile.write('[');
+  let isStart = true;
+  for (let i = 0; i < 1000; i += 50) {
     let page = await fetch_page(i);
-    let isStart = true;
     for(let player of page['players']) {
       if (!isStart) {
-        playerFile.write(",");
+        await playerFile.write(',');
       } else {
         isStart = false;
       }
       await playerFile.write(JSON.stringify(player));
     }
   }
+  await playerFile.write(']');
   await playerFile.close();
-  const teamFile = await fs.open("downloads/teams.json", "w");
+  const teamFile = await fs.open('downloads/teams.json', 'w');
   const teamsData = await fetch_teams();
-  const teams = teamsData["settings"]["proTeams"];
+  const teams = teamsData['settings']['proTeams'];
   await teamFile.write(JSON.stringify(teams));
   await teamFile.close();
 }
 
 load_data().then(function() {
-  console.log("DONE");
+  console.log('DONE');
 }).catch(function(error){
   console.log(error);
 });
