@@ -3,7 +3,7 @@ import styles from './layout.module.css';
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import Link from 'next/link';
-import { WithStore } from '@/data';
+import { WithStore } from '@/state';
 
 const sanchez = Roboto({ weight: "400", subsets: ['latin'] });
 

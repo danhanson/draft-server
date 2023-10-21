@@ -1,8 +1,8 @@
 'use client';
 import styles from './page.module.css';
-import { selectTeams } from '@/data/teams';
-import { useSelector } from '@/data/hooks';
-import { useFeed } from '@/data/feed';
+import { selectTeams } from '@/state/teams';
+import { useSelector } from '@/state/hooks';
+import { useFeed } from '@/state/feed';
 import AuctionSettings from './components/auction-settings';
 import Auction from './components/auction';
 import Passes from './components/passes';

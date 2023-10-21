@@ -1,3 +1,6 @@
+/**
+ * Load data from https://fantasy.espn.com/basketball/players/projections
+ */
 const fs = require('fs/promises');
 
 async function fetch_page(offset) {

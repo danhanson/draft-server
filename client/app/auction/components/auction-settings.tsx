@@ -1,7 +1,7 @@
-import { useDispatch, useSelector } from '@/data';
+import { useDispatch, useSelector } from '@/state';
 import styles from './auction-settings.module.css';
-import { selectAuctionSettings, setRosterSizeAction, setBudgetAction } from '@/data/auction-settings';
-import { addTeamAction } from '@/data/teams';
+import { selectAuctionSettings, setRosterSizeAction, setBudgetAction } from '@/state/auction-settings';
+import { addTeamAction } from '@/state/teams';
 
 export default function AuctionSettings() {
   const dispatch = useDispatch();

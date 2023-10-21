@@ -1,7 +1,7 @@
 import styles from './passes.module.css';
-import { useSelector, useDispatch } from '@/data';
-import { Team, selectTeams } from '@/data/teams';
-import { selectAuction, setPassAction, unsetPassAction } from '@/data/auction';
+import { useSelector, useDispatch } from '@/state';
+import { Team, selectTeams } from '@/state/teams';
+import { selectAuction, setPassAction, unsetPassAction } from '@/state/auction';
 
 export default function Passes() {
   const teams = useSelector(selectTeams);

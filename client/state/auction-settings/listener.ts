@@ -1,6 +1,6 @@
 import { createListenerMiddleware } from "@reduxjs/toolkit";
 import { updateAuctionSettings } from "./slice";
-import { messageAction } from "@/data/feed";
+import { messageAction } from "@/state/feed";
 
 const auctionSettingsListener = createListenerMiddleware();
 

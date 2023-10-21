@@ -1,5 +1,5 @@
 import { createListenerMiddleware } from '@reduxjs/toolkit';
-import { messageAction } from '@/data/feed';
+import { messageAction } from '@/state/feed';
 import { updateTeams } from './slice';
 
 const teamsActionsListener = createListenerMiddleware();

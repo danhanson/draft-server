@@ -1,4 +1,4 @@
-import { sendAction } from '@/data/feed';
+import { sendAction } from '@/state/feed';
 
 export interface SetRosterSize {
     function: 'set_roster_size';

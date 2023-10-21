@@ -1,5 +1,5 @@
-import { sendAction } from '@/data/feed';
-import { Team } from '@/data/teams';
+import { sendAction } from '@/state/feed';
+import { Team } from '@/state/teams';
 
 export interface StartAuction {
   function: 'start_auction';

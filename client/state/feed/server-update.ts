@@ -1,4 +1,4 @@
-import { type Player } from '@/data/players';
+import { type Player } from '@/state/data';
 
 export interface AuctionUpdate {
     is_checked: Array<string>;

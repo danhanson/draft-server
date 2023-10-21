@@ -1,4 +1,4 @@
-import { sendAction } from '@/data/feed';
+import { sendAction } from '@/state/feed';
 import { type Team } from './team';
 
 export interface AddTeam {

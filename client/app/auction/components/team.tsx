@@ -1,9 +1,9 @@
-import { useDispatch, useSelector } from '@/data';
+import { useDispatch, useSelector } from '@/state';
 import styles from './team.module.css';
-import { deleteTeamAction, type Team, type AuctionResult, setTeamBackgroundAction, renameTeamAction } from '@/data/teams';
-import { selectAuctionSettings } from '@/data/auction-settings';
-import { selectAuction } from '@/data/auction';
-import { finishAuctionAction } from '@/data/auction/actions';
+import { deleteTeamAction, type Team, type AuctionResult, setTeamBackgroundAction, renameTeamAction } from '@/state/teams';
+import { selectAuctionSettings } from '@/state/auction-settings';
+import { selectAuction } from '@/state/auction';
+import { finishAuctionAction } from '@/state/auction/actions';
 
 export default function Team({ team }: { team: Team }) {
   const dispatch = useDispatch();
